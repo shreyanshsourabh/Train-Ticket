@@ -1,0 +1,159 @@
+.header {
+  width: 100%;
+  background: #1a3a6b;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-main {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #f0a500;
+  letter-spacing: 1px;
+}
+
+.logo-sub {
+  font-size: 0.65rem;
+  color: #aac4e8;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #d0e4ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+.header-auth {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-login {
+  background: transparent;
+  border: 1.5px solid #f0a500;
+  color: #f0a500;
+  padding: 6px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-login:hover {
+  background: #f0a500;
+  color: #1a3a6b;
+}
+
+.btn-register {
+  background: #f0a500;
+  color: #1a3a6b;
+  padding: 6px 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: 1.5px solid #f0a500;
+  transition: all 0.2s;
+}
+
+.btn-register:hover {
+  background: #d4920a;
+  border-color: #d4920a;
+}
+
+.btn-logout {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-logout:hover {
+  background: #c0392b;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background: #122d57;
+  padding: 10px 20px;
+}
+
+.mobile-menu a {
+  color: #d0e4ff;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #1f4a80;
+  font-size: 0.9rem;
+}
+
+.header-banner {
+  background: #f0a500;
+  color: #1a3a6b;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .header-auth { display: none; }
+  .hamburger { display: block; }
+}
